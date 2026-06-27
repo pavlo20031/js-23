@@ -1,0 +1,31 @@
+h2, p{
+    margin: 0;
+    text-align: center;
+}
+.box{ 
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+    outline: 1px solid black;
+}
+.pic{
+    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    transform: translateX(100%) rotate(-180deg);
+    transition-property: transform;
+    transition-duration: 670ms;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.pic.active{
+    transform: translateX(0) rotate(0);
+}
+.card{
+    outline: 2px solid red;
+    width: 320px;
+border-radius: 20px;
+}
+.title, .text{
+    margin: 10px 0;
+}
